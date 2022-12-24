@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Merienda:wght@500&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #FAECE9;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 12%;
+    width: 80%;
+    margin: auto;
+}
+
+header h1{
+    display: flex;
+    align-items: center;
+    font-size: 3.5rem;
+    margin-left: 4%;
+    font-family: 'Merienda', cursive;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 30%;
+    margin-right: 1.8%;
+}
+
+header div *{
+    margin-right: 10%;
+}
+
+header div *:hover{
+    transform: scale(0.98);
+}
+
+section{
+    height: 88%;
+    width: 100%;
+    display: flex;
+}
+
+#left-container{
+    position: relative;
+    width: 58%;
+    height: 100%;
+    margin-left: 4%;
+    animation: bouncingMoney 3s infinite;
+}
+
+@keyframes bouncingMoney{
+    0%, 100%{
+        top: 0%;
+    }
+    50%{
+        top: -3%;
+    }
+}
+
+#conatainer{
+    width: 37.8%;
+    height: 97.6%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+}
+
+section input{
+    width: 55%;
+    height: 9%;
+    margin: 7% 0% 0% 5%;
+    outline: none;
+    background-color: transparent;
+    padding: 2%;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+section input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.btn{
+    width: 17%;
+    padding: 2%;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    background-color: #8F4BB6;
+    margin: 6% 0% 0% 24.2%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+#desc{
+    height: 27.4%;
+    width: 47%;
+    transform: scale(1.4);
+    position: relative;
+    right: 19%;
+    bottom: 12%;
+    animation: annouceFadeout 5s;
+}
+
+@keyframes annouceFadeout{
+    0%{transform: matrix(0.1, 0,0, 0.1, 100, 100);}
+}
+
+#announcement{
+    height: 55%;
+    width: 55%;
+    margin-left: 22%;
+    position: relative;
+    bottom: 14%;
+}
+
+p{
+    opacity: 0.9;
+    text-align: center;
+    max-width: 45%;
+    position: relative;
+    top: 11%;
+    right: 18%;
+    font-family: 'Merienda', cursive;
+    font-weight: bold;
+    animation: wordsFadeout 5s;
+}
+
+@keyframes wordsFadeout{
+    0%{transform: matrix(0.1, 0,0, 0.1, 100, 100);
+        opacity: 0;
+    }30%{opacity: 0;}
+}
+
+#output{
+    position: relative;
+    right: 1.7%;
+    width: 71%;
+    text-align: center;
+    margin-top: 9%;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #8F4BB6;
+    display: none;
+}
+
+#table-heading{
+    margin: 6% 0% 0% 17%;
+    display: none;
+}
+
+#table{
+    display: none;
+    height: 20%;
+    width: 95%;
+    margin-top: 2%;
+    border-radius: 25px;
+    border: 1px solid;
+    position: relative;
+    right: 13%;
+    background-color: #efafb1;
+    box-shadow: rgb(38, 57, 77) 0px 12px 30px -10px;
+}
+
+#table-header{
+    width: 30%;
+}
+
+#table-header h5{
+    text-align: center;
+    height: 50%;
+    padding-top: 13%;
+    font-size: 1.2rem;
+}
+
+#table-body{
+    width: 70%;
+    border-left: 1px solid;
+}
+
+.column{
+    display: flex;
+    height: 50%;
+}
+
+.column div{
+    width: 14.28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid;
+    font-size: 1.1rem;
+    font-weight: bold;
+}

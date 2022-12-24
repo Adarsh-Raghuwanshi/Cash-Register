@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <title>Cash Register</title>
+</head>
+<body>
+    <header>
+        <h1>Cash Register</h1>
+        <div>
+            <a href="https://twitter.com/Adarshraghu184" target="_blank"><img src="images/twitter.svg" alt="Twitter"/></a>
+            <a href="https://www.linkedin.com/in/adarsh-raghuwanshi/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"/></a>
+            <a href="mailto: adarsh.raghuwanshi184@gmail.com" target="_blank"><img src="images/gmail.svg" alt="Gmail"/></a>
+            <a href="https://github.com/Adarsh-Raghuwanshi" target="_blank"><img src="images/github.svg" alt="GitHub"/></a>
+        </div>
+    </header>
+
+    <section>
+        <img src="images/money.png" alt="Money Images" id="left-container"/>
+        <div id="conatainer">
+            <input type="number" placeholder="Enter Bill amount" id="bill"/>
+            <button class="btn" id="next">Next</button>
+            <p>Enter the amount's and we will tell you the amount to be returned in change to 
+                the customer with the minimum number of notes.</p>
+            <img src="images/chat.png" alt="Description" id="desc"/>
+            <img src="images/kid.png" alt="kid" id="announcement" />
+            <input type="number" placeholder="Enter Given Cash" id="givenCash" style="display: none;"/>
+            <button class="btn" id="check" style="display: none;">Check</button>
+            <div id="output"></div>
+
+            <h2 id="table-heading">Return Change</h2>
+            <div id="table">
+                <div id="table-header">
+                    <h5 style="border-bottom: 1px solid;">No. of Notes</h5>
+                    <h5>Note</h5>
+                </div>
+                <div id="table-body">
+                    <div class="column" style="border-bottom: 1px solid;">
+                        <div class="display">5</div>
+                        <div class="display">5</div>
+                        <div class="display">5</div>
+                        <div class="display">5</div>
+                        <div class="display">5</div>
+                        <div class="display">5</div>
+                        <div class="display" style="border: none;">5</div>
+                    </div>
+                    <div class="column">
+                        <div>2000</div>
+                        <div>500</div>
+                        <div>100</div>
+                        <div>20</div>
+                        <div>10</div>
+                        <div>5</div>
+                        <div style="border: none;">1</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
