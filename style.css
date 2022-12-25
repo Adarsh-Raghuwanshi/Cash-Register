@@ -121,6 +121,7 @@ section input::-webkit-inner-spin-button {
     right: 19%;
     bottom: 12%;
     animation: annouceFadeout 5s;
+    animation-delay: 3s;
 }
 
 @keyframes annouceFadeout{
@@ -145,6 +146,7 @@ p{
     font-family: 'Merienda', cursive;
     font-weight: bold;
     animation: wordsFadeout 5s;
+    animation-delay: 3s;
 }
 
 @keyframes wordsFadeout{
