@@ -13,8 +13,8 @@ const tableColumn = document.querySelectorAll(".display");
 let notes = [2000, 500, 100, 20, 10, 5, 1];
 
 btnNext.addEventListener("click", () => {
-    if(inputAmount.value == "" || inputAmount.value == 0){
-        alert("Enter your bill amount!");
+    if(inputAmount.value == "" || inputAmount.value <= 0){
+        alert("Invalid bill amount!");
         return;
     }
 
@@ -33,12 +33,16 @@ btnCheck.addEventListener("click", () => {
 
     let billAmount = inputAmount.value;
     let givenAmount = givenCash.value;
+    if(billAmount < 0 || givenAmount < 0){
+        output.innerHTML = "Invalid amounts given!";
+        return;
+    }
     let amountToReturn = givenAmount - billAmount;
     if(amountToReturn < 0){
-        output.innerHTML = "Insufficient cash given!"
+        output.innerHTML = "Insufficient cash given!";
         return;
     }else if(amountToReturn == 0){
-        output.innerHTML = "Nothing to return! All accounts are clear."
+        output.innerHTML = "Nothing to return! All accounts are clear.";
         return;
     }
 
